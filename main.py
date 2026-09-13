@@ -1,8 +1,4 @@
-from src.tools.tools import web_search, scrape_url
+from src.pipelines.pipelines import run_research_pipeline
 
-# output = web_search("Latest news on AI")
-
-# print(output)
-
-results = scrape_url("https://www.reddit.com/r/artificial/")
-print(results)
+topic = "The impact of AI on the job market in 2026"
+run_research_pipeline(topic)
